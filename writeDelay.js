@@ -1,13 +1,13 @@
 const delay = require("./delay.js")
 
-async function writeDelay(texto, intervalo) {
+async function writeDelay(text, interval) {
     let index = 0
 
     async function writeLetters() {
-        if (index < texto.length) {
-            await process.stdout.write(texto.charAt(index))
+        if (index < text.length) {
+            await process.stdout.write(text.charAt(index))
             index++
-            await delay(intervalo)
+            await delay(interval)
             await writeLetters()
         } else {
             process.stdout.write("\n")
