@@ -1,6 +1,6 @@
-const { clearTerminal, newLine } = require("./terminalUtils.js")
-const delay = require("./delay.js")
-const writeDelay = require("./writeDelay.js")
+const { clearTerminal, newLine } = require("./lib/terminalUtils.js")
+const delay = require("./lib/delay.js")
+const writeDelay = require("./lib/writeDelay.js")
 
 async function lyrics() {
     clearTerminal()
