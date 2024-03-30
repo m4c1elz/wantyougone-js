@@ -2,6 +2,8 @@
 
 Portal 2's credits song, in an actual command line interface.
 
+![Demo](program.gif)
+
 ## Requirements
 - Node.js
 - MPV
