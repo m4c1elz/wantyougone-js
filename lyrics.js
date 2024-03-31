@@ -1,8 +1,8 @@
-const { clearTerminal, newLine } = require("./lib/terminalUtils.js")
-const delay = require("./lib/delay.js")
-const writeDelay = require("./lib/writeDelay.js")
+import { clearTerminal, newLine } from "./lib/terminalUtils.js"
+import delay from "./lib/delay.js"
+import writeDelay from "./lib/writeDelay.js"
 
-async function lyrics() {
+export default async function lyrics() {
     clearTerminal()
     newLine()
     await delay(6500)
@@ -109,5 +109,3 @@ async function lyrics() {
     await writeDelay("Developed by M4c1el", 50)
     await delay(500)
 }
-
-module.exports = lyrics
