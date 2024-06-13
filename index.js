@@ -1,7 +1,9 @@
-import { exec } from "node:child_process"
+import Audic from "audic"
 import lyrics from "./lyrics.js"
 
-const music = exec("mpv wantyougone.mp3")
+const music = new Audic("wantyougone.mp3")
+music.volume = 0.4
 ;(async () => {
+    await music.play()
     await lyrics()
 })()
